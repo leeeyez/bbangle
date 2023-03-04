@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAEED7"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/back"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_marginTop="20px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_top"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/myPage"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:src="@drawable/mypage"/>
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="1000px"
+        android:layout_height="1000px"
+        android:layout_marginTop="50px"
+        android:layout_gravity="center"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="20px"
+        android:text="폴앤폴리나"
+        android:textSize="70px"
+        android:textColor="#884F47"
+        android:fontFamily="@font/jalnan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20px">
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="100px"
+            android:src="@drawable/pin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:layout_marginLeft="20px"
+            android:text="위치"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="서울 영등포구 의사당대로 108 아일렉스 상가"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textColor="#B38861"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20px">
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="100px"
+            android:src="@drawable/clock"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:layout_marginLeft="20px"
+            android:text="영업시간"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="12:00 - 19:00 (토 11:00 - 18:00, 매주 일 휴무)"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textColor="#B38861"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20px">
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="100px"
+            android:src="@drawable/call"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:layout_marginLeft="20px"
+            android:text="전화번호"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="02-761-1966"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textColor="#B38861"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="100px"
+            android:src="@drawable/home"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:layout_marginLeft="20px"
+            android:text="사이트"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="https://www.instagram.com/paul.and.paulina"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textColor="#B38861"/>
+        <Button
+            android:id="@+id/web"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_marginLeft="20px"
+            android:text="방문하기"
+            android:textSize="30px"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:backgroundTint="#D17A6D"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="20px"
+        android:padding="30px"
+        android:text="이곳에서 예약하기"
+        android:fontFamily="@font/jalnan"
+        android:textSize="40px"
+        android:backgroundTint="#884F47" />
+
+</LinearLayout>

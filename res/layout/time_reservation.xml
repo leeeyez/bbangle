@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FAEED7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/back"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_marginTop="20px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_top"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/myPage"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:src="@drawable/mypage"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/store_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:text=""
+        android:textSize="60px"
+        android:textColor="#884F47"
+        android:fontFamily="@font/jalnan"/>
+
+    <LinearLayout
+        android:id="@+id/infoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50px"
+        android:background="#D17A6D"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/idInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_marginLeft="50px"
+                android:gravity="center"
+                android:fontFamily="@font/jalnan"
+                android:textSize="40px"
+                android:textColor="#F4E48F"
+                android:text=""/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:gravity="center"
+                android:fontFamily="@font/jalnan"
+                android:textSize="35px"
+                android:textColor="@color/white"
+                android:text="님의 예약 정보"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_marginLeft="50px"
+                android:fontFamily="@font/jalnan"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="선택한 빵 메뉴 : "/>
+            <TextView
+                android:id="@+id/menuInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:gravity="center"
+                android:fontFamily="@font/jalnan"
+                android:textSize="35px"
+                android:textColor="@color/white"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="50px"
+                android:fontFamily="@font/jalnan"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="개수 : "/>
+            <TextView
+                android:id="@+id/manyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:fontFamily="@font/jalnan"
+                android:textSize="35px"
+                android:textColor="@color/white"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="50px"
+                android:fontFamily="@font/jalnan"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="총 가격 : "/>
+            <TextView
+                android:id="@+id/priceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:fontFamily="@font/jalnan"
+                android:textSize="40px"
+                android:textColor="#F4E48F"
+                android:text=""/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:text="원하는 날짜와 시간을 선택 후 확인 버튼을 눌러 정보를 확인해주세요."
+        android:textSize="30px"
+        android:textColor="#B38861"
+        android:fontFamily="@font/jalnan"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <DatePicker
+            android:datePickerMode="calendar"
+            android:id="@+id/datePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/radio">
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8시" />
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10시" />
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12시" />
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14시" />
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16시" />
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18시" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/BtnDayOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:backgroundTint="#D5CB78"/>
+        <Button
+            android:id="@+id/btnReserve"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#884F47"
+            android:padding="20px"
+            android:layout_margin="40px"
+            android:text="예약 완료"
+            android:fontFamily="@font/jalnan"
+            android:textSize="20px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD4A7"
+        android:gravity="center"
+        android:layout_margin="10px">
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="년" />
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="월" />
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="일" />
+
+        <TextView
+            android:id="@+id/tvHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="시" />
+    </LinearLayout>
+</LinearLayout>

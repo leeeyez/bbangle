@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FAEED7"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/back"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_marginTop="20px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/logo_top"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myPage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        android:text="00님이 즐겨찾는 빵집"
+        android:textSize="60px"
+        android:textColor="#884F47"
+        android:fontFamily="@font/jalnan"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/one"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="런던베이글 뮤지엄"
+            android:layout_margin="50px"
+            android:textSize="40px"
+            android:fontFamily="@font/jalnan"
+            android:textColor="#884F47"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/tb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B38861"
+            android:textOff="즐겨찾기 해제"
+            android:textOn="즐겨찾기 등록"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/two"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="빵의 정석"
+            android:layout_margin="50px"
+            android:textSize="40px"
+            android:fontFamily="@font/jalnan"
+            android:textColor="#884F47"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/tb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B38861"
+            android:textOff="즐겨찾기 해제"
+            android:textOn="즐겨찾기 등록"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/three"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="어글리 베이커리"
+            android:layout_margin="50px"
+            android:textSize="40px"
+            android:fontFamily="@font/jalnan"
+            android:textColor="#884F47"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/tb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B38861"
+            android:textOff="즐겨찾기 해제"
+            android:textOn="즐겨찾기 등록"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/four"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오월의 종"
+            android:layout_margin="50px"
+            android:textSize="40px"
+            android:fontFamily="@font/jalnan"
+            android:textColor="#884F47"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/tb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B38861"
+            android:textOff="즐겨찾기 해제"
+            android:textOn="즐겨찾기 등록"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/five"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="타르틴 베이커리"
+            android:layout_margin="50px"
+            android:textSize="40px"
+            android:fontFamily="@font/jalnan"
+            android:textColor="#884F47"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/tb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B38861"
+            android:textOff="즐겨찾기 해제"
+            android:textOn="즐겨찾기 등록"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/six"/>
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="폴앤폴리나"
+            android:layout_margin="50px"
+            android:textSize="40px"
+            android:fontFamily="@font/jalnan"
+            android:textColor="#884F47"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/tb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B38861"
+            android:textOff="즐겨찾기 해제"
+            android:textOn="즐겨찾기 등록"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEED7"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:src="@drawable/logo_app"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BBANGLE"
+        android:textColor="#D17A6D"
+        android:textSize="120px"
+        android:textStyle="bold"
+        android:fontFamily="@font/jalnan"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#884F47"
+        android:padding="30px"
+        android:layout_margin="60px"
+        android:text="시작하기"
+        android:fontFamily="@font/jalnan"
+        android:textSize="60px"/>
+
+
+</LinearLayout>

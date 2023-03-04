@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FAEED7">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_circle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:paddingTop="20px"
+        android:fontFamily="@font/jalnan"
+        android:textColor="#B38861"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:padding="60px"
+            android:background="@drawable/edittext_design"
+            android:hint="아이디"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_margin="40px"
+            android:padding="60px"
+            android:background="@drawable/edittext_design"
+            android:hint="비밀번호"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_margin="100px"
+            android:padding="30px"
+            android:text="로그인"
+            android:fontFamily="@font/jalnan"
+            android:textSize="60px"
+            android:backgroundTint="#884F47" />
+    </LinearLayout>
+
+</LinearLayout>

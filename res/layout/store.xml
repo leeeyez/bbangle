@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#FAEED7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/back"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_marginTop="20px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_top"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/myPage"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:src="@drawable/mypage"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="70px"
+        android:layout_marginBottom="20px"
+        android:textColor="#B38861"
+        android:textSize="40px"
+        android:id="@+id/choose"
+        android:fontFamily="@font/jalnan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="빵집을 선택해주세요"
+        android:layout_marginBottom="100px"
+        android:textSize="70px"
+        android:fontFamily="@font/jalnan"
+        android:textColor="#884F47"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="100px">
+            <ImageButton
+                android:id="@+id/btnLondon"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:src="@drawable/one"
+                android:scaleType="centerInside"
+                android:backgroundTint="#B38861"/>
+            <TextView
+                android:layout_margin="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="런던베이글 뮤지엄"
+                android:textColor="#B38861"
+                android:fontFamily="@font/jalnan"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btnJungsuk"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:src="@drawable/two"
+                android:scaleType="centerInside"
+                android:backgroundTint="#B38861"/>
+            <TextView
+                android:layout_margin="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="빵의 정석"
+                android:textColor="#B38861"
+                android:fontFamily="@font/jalnan"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="100px">
+            <ImageButton
+                android:id="@+id/btnOwal"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:src="@drawable/four"
+                android:scaleType="centerInside"
+                android:backgroundTint="#B38861"/>
+            <TextView
+                android:layout_margin="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오월의 종"
+                android:textColor="#B38861"
+                android:fontFamily="@font/jalnan"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btnTartine"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:src="@drawable/five"
+                android:scaleType="centerInside"
+                android:backgroundTint="#B38861"/>
+            <TextView
+                android:layout_margin="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="타르틴베이커리"
+                android:textColor="#B38861"
+                android:fontFamily="@font/jalnan"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="100px">
+            <ImageButton
+                android:id="@+id/btnUgly"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:src="@drawable/three"
+                android:scaleType="centerInside"
+                android:backgroundTint="#B38861"/>
+            <TextView
+                android:layout_margin="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="어글리 베이커리"
+                android:textColor="#B38861"
+                android:fontFamily="@font/jalnan"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btnPol"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:src="@drawable/six"
+                android:scaleType="centerInside"
+                android:backgroundTint="#B38861"/>
+            <TextView
+                android:layout_margin="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="폴앤폴리나"
+                android:textColor="#B38861"
+                android:fontFamily="@font/jalnan"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

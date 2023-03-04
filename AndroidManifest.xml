@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="smu.it.lasthw">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lasthw"
+        tools:targetApi="31">
+
+        <!--구글 맵 api를 위해 추가한 meta data (key값) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDroJMNZYohoOZM5eFtvER6FAukHXvID8I"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TartineActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".StoreActivity"/>
+        <activity android:name=".JungsukActivity"/>
+        <activity android:name=".OwalActivity"/>
+        <activity android:name=".UglyActivity"/>
+        <activity android:name=".LondonActivity"/>
+        <activity android:name=".PolActivity"/>
+        <activity android:name=".BreadLondonActivity"/>
+        <activity android:name=".TimeActivity"/>
+        <activity android:name=".ConfirmActivity"/>
+        <activity android:name=".BreadJungsukActivity"/>
+        <activity android:name=".BreadUglyActivity"/>
+        <activity android:name=".BreadTartineActivity"/>
+        <activity android:name=".BreadOwalActivity"/>
+        <activity android:name=".BreadPolActivity"/>
+        <activity android:name=".MyPageActivity"/>
+    </application>
+
+</manifest>
